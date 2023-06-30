@@ -1,0 +1,38 @@
+// Colors
+$primary-color: white;
+$secondary-color: orange;
+$accent-color: blue;
+$darkest-color: #252525;
+$lightest-color: #f4eeee;
+
+// Text colors
+$text-color: $darkest-color;
+$subtle-text-color: #858585;
+
+// Fonts
+$font-family: sans-serif;
+$font-size: 16px;
+$xsm-font-size: calc($font-size / 3.236);
+$sm-font-size: calc($font-size / 1.618);
+$lg-font-size: calc($font-size * 1.618);
+$xlg-font-size: calc($font-size * 4.854);
+
+// Layout
+$header-height: 10vh;
+$footer-height: 5vh;
+
+// Spacing
+    // Margin
+        $default-outter-margin: 2em;
+        $default-inner-margin: 1em;
+
+    // Padding
+        $default-padding: 2em;
+        $sm-padding: 1em;
+        $lg-padding: 1.618em;
+
+// Dimensions
+$max-width: 1600px;
+
+// Transition
+$default-transition: all 2s cubic-bezier(0.09, 0.88, 0.21, 1);

@@ -1,0 +1,18 @@
+// All elements
+*{
+    transition: $default-transition;
+}
+
+h1{
+    transition: $default-transition;
+}
+
+// Links
+a{
+    transition: $default-transition;
+    transition-delay: 50ms;
+    &:hover{
+        color: $accent-color;
+        transform: translateY(-4px);
+    }
+}
