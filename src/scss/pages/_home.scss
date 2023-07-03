@@ -1,11 +1,11 @@
 body{
-    background: linear-gradient(90deg, black 0%, rgba(0,0,0,0) 50%), $bg-color;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 50%, black 100%), $bg-color;
 }
 
 .hero{
 
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-inline: $default-padding-inline;
 
@@ -18,14 +18,30 @@ body{
         align-items: flex-start;
         gap: 40px;
 
-        max-width: 650px;
+        width: 700px;
 
         h1{
             font-weight: 200;
+            letter-spacing: -2px;
     
             span{
                 font-weight: 500;
             }
         }
+        .cta{
+            display: flex;
+            gap: 2em;
+        }
+    }
+
+    .hero-img{
+        width: 35%;
+        height: 100vh;
+        position: absolute;
+        left: 23%;
+        top: 0;
+        z-index: -1;
+        background: url(../images/background.jpeg); 
+        background-size: cover;
     }
 }

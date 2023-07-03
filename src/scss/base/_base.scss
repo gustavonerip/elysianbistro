@@ -7,3 +7,7 @@ body{
     background: $bg-color;
     color: $text-color;
 }
+
+.primary-btn{
+    @include primary-btn;
+}

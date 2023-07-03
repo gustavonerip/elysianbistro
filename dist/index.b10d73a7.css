@@ -48,6 +48,21 @@ body {
   background: #0f1b23;
 }
 
+.primary-btn {
+  cursor: pointer;
+  color: #f2fbff;
+  background: none;
+  border: 2px solid #fff;
+  padding: 16px 32px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  color: #d98f27;
+  border-color: #d98f27;
+}
+
 header {
   justify-content: space-between;
   align-items: flex-end;
@@ -84,11 +99,11 @@ footer p {
 }
 
 body {
-  background: linear-gradient(90deg, #000 0%, #0000 50%), #0f1b23;
+  background: linear-gradient(90deg, #0000 50%, #000 100%), #0f1b23;
 }
 
 .hero {
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   padding-inline: 11.11%;
   display: flex;
@@ -100,17 +115,33 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  max-width: 650px;
+  width: 700px;
   padding: 80px 56px;
   display: flex;
 }
 
 .hero .hero-content h1 {
+  letter-spacing: -2px;
   font-weight: 200;
 }
 
 .hero .hero-content h1 span {
   font-weight: 500;
+}
+
+.hero .hero-content .cta {
+  gap: 2em;
+  display: flex;
+}
+
+.hero .hero-img {
+  z-index: -1;
+  background: url("background.dab6e7de.jpeg") 0 0 / cover;
+  width: 35%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 23%;
 }
 
 *, h1 {
