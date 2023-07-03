@@ -6,19 +6,19 @@
     <title>Elysian Bistro</title>
 </head>
 <body>
-    <h2>Make a reservation</h2>
+    <h2 id="reso-status-message">Make a reservation</h2>
     <form id="reservation-form">
         <label for="name">Name</label>
-        <input type="text" id="name" required="">
-        <label for="name">Last Name</label>
-        <input type="text" id="last-name" required="">
+        <input type="text" id="name" name="name" autocomplete="given-name">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" autocomplete="family-name" required="">
         <label for="email">Email</label>
-        <input type="email" id="email" required="">
+        <input type="email" id="email" name="email" autocomplete="email" required="">
         <label for="phone">Phone</label>
-        <input type="tel" id="phone" required="">
+        <input type="tel" id="phone" name="phone" autocomplete="tel" required="">
         <label for="date">Date</label>
-        <input type="date" id="date" required="">
-        <select id="time" required="">
+        <input type="date" id="date" name="date" required="">
+        <select id="time" name="time" required="">
             <option value="5:00 PM">5:00 PM</option>
             <option value="5:15 PM">5:15 PM</option>
             <option value="5:30 PM">5:30 PM</option>
@@ -40,8 +40,8 @@
             <option value="9:30 PM">9:30 PM</option>
             <option value="9:45 PM">9:45 PM</option>
         </select>
-        <label for="guests" id="guests">Number of guests</label>
-        <select id="guests" required="">
+        <label for="guests">Number of guests</label>
+        <select id="guests" name="guests" required="">
             <option value="1">1 Guest</option>
             <option value="2">2 Guests</option>
             <option value="3">3 Guests</option>
@@ -49,7 +49,7 @@
             <option value="5">5 Guests</option>
             <option value="6">6 Guests</option>
         </select>
-        <button type="submit" onclick="submitReservation()">Book</button>
+        <button type="button">Book</button>
     </form>
     <span>* For 7+ guests please call <a href="tel:+15551234567">+1 (555) 123-4567</a> or email at <a href="mailto:info@elysianbistro.com">info@elysianbistro.com</a> and we will be happy to assist you.</span>
     <script src="/index.18dbc454.js" defer=""></script>

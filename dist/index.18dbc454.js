@@ -575,7 +575,101 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"1SICI":[function(require,module,exports) {
 var _mainScss = require("../scss/main.scss");
+var _reservations = require("./reservations");
+const submitBtn = document.querySelector("#reservation-form button");
+submitBtn.addEventListener("click", (0, _reservations.submitReservation));
 
-},{"../scss/main.scss":"4Pg3x"}],"4Pg3x":[function() {},{}]},["gEwwu","1SICI"], "1SICI", "parcelRequire2bcb")
+},{"../scss/main.scss":"4Pg3x","./reservations":"i1lV5"}],"4Pg3x":[function() {},{}],"i1lV5":[function(require,module,exports) {
+// Reservations system
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Reservation", ()=>Reservation);
+parcelHelpers.export(exports, "submitReservation", ()=>submitReservation);
+class Reservation {
+    constructor(name, lastname, email, phone, date, time, guests){
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.phone = phone;
+        this.date = date;
+        this.time = time;
+        this.guests = guests;
+    }
+    isValid() {
+        if (!this.name || !this.lastname || !this.email || !this.phone || !this.date || !this.time || !this.guests) return false;
+        return true;
+    }
+}
+function submitReservation() {
+    let name = document.getElementById("name").value;
+    let lastName = document.getElementById("lastname").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let dateInput = document.getElementById("date").value;
+    let time = document.getElementById("time").value;
+    let guests = document.getElementById("guests").value;
+    let dateParts = dateInput.split("-");
+    let year = dateParts[0];
+    let month = dateParts[1];
+    let day = dateParts[2];
+    let dateObj = new Date(year, month - 1, day);
+    let formattedMonth = dateObj.toLocaleString("default", {
+        month: "long"
+    });
+    let formattedDate = `${formattedMonth} ${day}, ${year}`;
+    let reservation = new Reservation(name, lastName, email, phone, formattedDate, time, guests);
+    if (!reservation.isValid()) {
+        alert("Please fill all the fields correctly");
+        return;
+    }
+    const formContainer = document.getElementById("reservation-form");
+    const resoStatus = document.getElementById("reso-status-message");
+    formContainer.innerHTML = `
+      <div class="reservation-message">
+        <p>Thank you ${name}!</p>
+        <p>We look forward to welcome you to Elysian Bistro.</p>
+        <p>Follow your reservation details:</p>
+        <ul>
+          <li>Date: ${formattedDate}</li>
+          <li>Time: ${time}</li>
+          <li>Number of guests: ${guests}</li>
+        </ul>
+      </div>
+    `;
+    resoStatus.innerHTML = "Reservation successful!";
+    return false;
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["gEwwu","1SICI"], "1SICI", "parcelRequire2bcb")
 
 //# sourceMappingURL=index.18dbc454.js.map
