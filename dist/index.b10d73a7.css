@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: Noto Sans, sans-serif;
+}
+
 a {
   color: #f2fbff;
   font-family: Noto Sans, sans-serif;
@@ -24,6 +28,13 @@ a {
 
 nav a {
   font-weight: 300;
+}
+
+h1 {
+  letter-spacing: -.96px;
+  font-family: Noto Serif Display, serif;
+  font-size: 48px;
+  line-height: 100%;
 }
 
 footer p {
@@ -70,6 +81,36 @@ footer {
 footer p {
   max-width: calc(100vw - 22.22%);
   margin: 0 auto;
+}
+
+body {
+  background: linear-gradient(90deg, #000 0%, #0000 50%), #0f1b23;
+}
+
+.hero {
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline: 11.11%;
+  display: flex;
+}
+
+.hero .hero-content {
+  background: #0f1b23;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 650px;
+  padding: 80px 56px;
+  display: flex;
+}
+
+.hero .hero-content h1 {
+  font-weight: 200;
+}
+
+.hero .hero-content h1 span {
+  font-weight: 500;
 }
 
 *, h1 {

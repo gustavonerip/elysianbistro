@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(90deg, black 0%, rgba(0,0,0,0) 50%), $bg-color;
+}
+
+.hero{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-inline: $default-padding-inline;
+
+    .hero-content{
+        background: $primary-color;
+        padding: 80px 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+
+        max-width: 650px;
+
+        h1{
+            font-weight: 200;
+    
+            span{
+                font-weight: 500;
+            }
+        }
+    }
+}

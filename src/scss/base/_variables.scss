@@ -24,13 +24,14 @@ $secondary-font-family: 'Noto Sans', sans-serif;
 $font-size: 16px;
 $xsm-font-size: calc($font-size / 3.236);
 $sm-font-size: calc($font-size / 1.618);
-$lg-font-size: calc($font-size * 1.618);
-$xlg-font-size: calc($font-size * 4.854);
+$lg-font-size: calc($font-size * 3);
+$xlg-font-size: calc($font-size * 5);
 $menu-font-size: $font-size; 
 
 // Layout
 $header-height: 15vh;
 $footer-height: 5vh;
+$default-padding-inline: 11.11%;
 
 // Spacing
     // Margin

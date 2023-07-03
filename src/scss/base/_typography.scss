@@ -1,3 +1,7 @@
+body{
+    font-family: $secondary-font-family;
+}
+
 a{
     font-family: $secondary-font-family;
     color: $text-color;
@@ -5,6 +9,13 @@ a{
 
 nav a{
     font-weight: 300;
+}
+
+h1{
+    font-size: $lg-font-size;
+    font-family: $primary-font-family;
+    line-height: 100%;
+    letter-spacing: -0.96px;
 }
 
 footer p{

@@ -1,7 +1,7 @@
 header{
     width: 100%;
     height: $header-height;
-    padding-inline: 11.11%;
+    padding-inline: $default-padding-inline;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
