@@ -577,7 +577,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var _mainScss = require("../scss/main.scss");
 var _reservations = require("./reservations");
 const submitBtn = document.querySelector("#reservation-form button");
-submitBtn.addEventListener("click", (0, _reservations.submitReservation));
+if (submitBtn) submitBtn.addEventListener("click", (0, _reservations.submitReservation));
 
 },{"../scss/main.scss":"4Pg3x","./reservations":"i1lV5"}],"4Pg3x":[function() {},{}],"i1lV5":[function(require,module,exports) {
 // Reservations system

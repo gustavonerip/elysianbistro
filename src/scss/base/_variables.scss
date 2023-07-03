@@ -1,24 +1,35 @@
 // Colors
-$primary-color: white;
-$secondary-color: orange;
-$accent-color: blue;
-$darkest-color: #252525;
-$lightest-color: #f4eeee;
+$primary-color: #0F1B23;
+$secondary-color: #F2FBFF;
+$accent-color: #D98F27;
+$darkest-color: #161A1C;
+$lightest-color: #F2FBFF;
+
+// Background colors
+$bg-color: $primary-color;
+
+// Link colors
+$link-color: $lightest-color;
+$link-hover-color: $accent-color;
 
 // Text colors
-$text-color: $darkest-color;
+$text-color: $lightest-color;
 $subtle-text-color: #858585;
 
 // Fonts
-$font-family: sans-serif;
+// Import
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+$primary-font-family: 'Noto Serif Display', serif;
+$secondary-font-family: 'Noto Sans', sans-serif;
 $font-size: 16px;
 $xsm-font-size: calc($font-size / 3.236);
 $sm-font-size: calc($font-size / 1.618);
 $lg-font-size: calc($font-size * 1.618);
 $xlg-font-size: calc($font-size * 4.854);
+$menu-font-size: $font-size; 
 
 // Layout
-$header-height: 10vh;
+$header-height: 15vh;
 $footer-height: 5vh;
 
 // Spacing
@@ -32,7 +43,7 @@ $footer-height: 5vh;
         $lg-padding: 1.618em;
 
 // Dimensions
-$max-width: 1600px;
+$max-width: calc(100vw - 22.22%);
 
 // Transition
 $default-transition: all 2s cubic-bezier(0.09, 0.88, 0.21, 1);

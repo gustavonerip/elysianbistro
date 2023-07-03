@@ -13,6 +13,5 @@ a{
     transition-delay: 50ms;
     &:hover{
         color: $accent-color;
-        transform: translateY(-4px);
     }
 }

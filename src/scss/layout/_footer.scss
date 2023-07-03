@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    height: $footer-height;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    max-width: $max-width;
+    margin: 0 auto;
+}

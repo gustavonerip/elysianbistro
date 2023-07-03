@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,6 +17,61 @@ ul {
   list-style: none;
 }
 
+a {
+  color: #f2fbff;
+  font-family: Noto Sans, sans-serif;
+}
+
+nav a {
+  font-weight: 300;
+}
+
+footer p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+body {
+  color: #f2fbff;
+  background: #0f1b23;
+}
+
+header {
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 15vh;
+  padding-inline: 11.11%;
+  display: flex;
+}
+
+nav {
+  align-items: flex-start;
+  gap: 3em;
+  padding-bottom: 1em;
+  display: flex;
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+}
+
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+}
+
+footer p {
+  max-width: calc(100vw - 22.22%);
+  margin: 0 auto;
+}
+
 *, h1 {
   transition: all 2s cubic-bezier(.09, .88, .21, 1);
 }
@@ -25,8 +81,7 @@ a {
 }
 
 a:hover {
-  color: #00f;
-  transform: translateY(-4px);
+  color: #d98f27;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

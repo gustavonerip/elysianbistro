@@ -1,0 +1,15 @@
+header{
+    width: 100%;
+    height: $header-height;
+    padding-inline: 11.11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav{
+    display: flex;
+    align-items: flex-start;
+    gap: 3em;
+    padding-bottom: 1em;
+}
