@@ -28,6 +28,11 @@ export function submitReservation() {
     let time = document.getElementById('time').value;
     let guests = document.getElementById('guests').value; 
 
+    if(!date.value){
+      alert('Please choose a date for your reservation.');
+      return;
+    }
+
     let dateParts = dateInput.split('-');
     let year = dateParts[0];
     let month = dateParts[1];

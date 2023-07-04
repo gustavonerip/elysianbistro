@@ -586,12 +586,12 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Reservation", ()=>Reservation);
 parcelHelpers.export(exports, "submitReservation", ()=>submitReservation);
 class Reservation {
-    constructor(name, lastname, email, phone, date, time, guests){
+    constructor(name, lastname, email, phone, date1, time, guests){
         this.name = name;
         this.lastname = lastname;
         this.email = email;
         this.phone = phone;
-        this.date = date;
+        this.date = date1;
         this.time = time;
         this.guests = guests;
     }
@@ -608,6 +608,10 @@ function submitReservation() {
     let dateInput = document.getElementById("date").value;
     let time = document.getElementById("time").value;
     let guests = document.getElementById("guests").value;
+    if (!date.value) {
+        alert("Please choose a date for your reservation.");
+        return;
+    }
     let dateParts = dateInput.split("-");
     let year = dateParts[0];
     let month = dateParts[1];
