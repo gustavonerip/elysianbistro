@@ -48,21 +48,6 @@ body {
   background: #0f1b23;
 }
 
-.primary-btn {
-  cursor: pointer;
-  color: #f2fbff;
-  background: none;
-  border: 2px solid #fff;
-  padding: 16px 32px;
-  font-family: Noto Sans, sans-serif;
-  font-size: 16px;
-}
-
-.primary-btn:hover {
-  color: #d98f27;
-  border-color: #d98f27;
-}
-
 header {
   justify-content: space-between;
   align-items: flex-end;
@@ -84,6 +69,11 @@ main {
   min-height: 80vh;
 }
 
+.menu {
+  margin: 0 auto;
+  padding-inline: 11.11%;
+}
+
 footer {
   text-align: center;
   justify-content: center;
@@ -98,7 +88,122 @@ footer p {
   margin: 0 auto;
 }
 
-body {
+.primary-btn {
+  cursor: pointer;
+  color: #f2fbff;
+  background: none;
+  border: 2px solid #fff;
+  padding: 16px 32px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+}
+
+.primary-btn:hover {
+  color: #d98f27;
+  border-color: #d98f27;
+}
+
+form, label, input, select, button {
+  width: 100%;
+  font-family: Noto Sans, sans-serif;
+  display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+  color: #f2fbff;
+  background: none;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #f2fbff;
+  outline: none;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-size: 16px;
+}
+
+input[type="text"]:-webkit-autofill {
+  color: #f2fbff;
+  background: none;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #f2fbff;
+  outline: none;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-size: 16px;
+}
+
+input[type="text"]:autofill {
+  color: #f2fbff;
+  background: none;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #f2fbff;
+  outline: none;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+  border-bottom: 2px solid #d98f27;
+}
+
+input[type="text"]:-webkit-autofill:focus {
+  border-bottom: 2px solid #d98f27;
+}
+
+input[type="text"]:autofill:focus {
+  border-bottom: 2px solid #d98f27;
+}
+
+input[type="date"], select {
+  color: #f2fbff;
+  background: none;
+  border-style: none none solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #f2fbff;
+  outline: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 2em;
+  padding: 1em;
+  font-size: 16px;
+}
+
+input[type="date"]:focus, select:focus {
+  border-bottom: 2px solid #d98f27;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert();
+}
+
+select::-webkit-calendar-picker-indicator {
+  filter: invert();
+}
+
+.two-col {
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 2em;
+  margin-block: 1em;
+  display: flex;
+}
+
+.two-col label {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  flex-grow: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body.home-bg {
   background: linear-gradient(90deg, #0000 50%, #000 100%), #0f1b23;
 }
 
@@ -142,6 +247,106 @@ body {
   position: absolute;
   top: 0;
   left: 23%;
+}
+
+.menu-bg {
+  background-blend-mode: multiply, normal;
+  background: url("menu-bg-img.8b7563e9.jpeg"), 50% / cover no-repeat, #0f1b23;
+}
+
+.menu-content {
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  display: flex;
+}
+
+.menu-content h1 {
+  margin-top: 2em;
+}
+
+.menu-content h2 {
+  margin-bottom: 1em;
+  font-family: Noto Serif Display, serif;
+  font-weight: 400;
+}
+
+.menu-content p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.menu-content p span {
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+.menu-content .menu-section {
+  text-align: center;
+  width: 100%;
+}
+
+.reservation-bg {
+  background-blend-mode: multiply, normal;
+  background: url("menu-bg-img.8b7563e9.jpeg"), 50% / cover no-repeat, #0f1b23;
+}
+
+.reservation-bg .reservation {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6%;
+  padding-inline: 11.11%;
+  display: flex;
+}
+
+.reservation-bg .reservation .reservation-img {
+  background: url("reservation-img.61794114.jpg") center / cover;
+  flex-grow: .5;
+  width: 50%;
+  height: 700px;
+}
+
+.reservation-bg .reservation .reservation-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  max-width: 700px;
+  display: flex;
+}
+
+.reservation-bg .reservation .reservation-content h2 {
+  letter-spacing: -1px;
+  font-family: Noto Serif Display, serif;
+  font-size: 48px;
+}
+
+.reservation-bg .reservation .reservation-content .reservation-message p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.reservation-bg .reservation .reservation-content .reservation-message ul {
+  border-top: 2px solid #f2fbff;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3em auto 0;
+  padding: 1em 3em 2em;
+}
+
+.reservation-bg .reservation .reservation-content .reservation-message ul li {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 .5em;
+  display: block;
+}
+
+.reservation-bg .reservation .reservation-content span {
+  font-size: 12px;
+}
+
+.reservation-bg .reservation .reservation-content span a {
+  text-decoration: underline;
 }
 
 *, h1 {

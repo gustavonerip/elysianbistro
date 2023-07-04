@@ -626,7 +626,7 @@ function submitReservation() {
     const resoStatus = document.getElementById("reso-status-message");
     formContainer.innerHTML = `
       <div class="reservation-message">
-        <p>Thank you ${name}!</p>
+        <p>Thank you <b>${name}!</b></p>
         <p>We look forward to welcome you to Elysian Bistro.</p>
         <p>Follow your reservation details:</p>
         <ul>

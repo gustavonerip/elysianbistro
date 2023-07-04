@@ -1,0 +1,63 @@
+form, label, input, select, button{
+    display: block;
+    font-family: $secondary-font-family;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="text"]:autofill,
+input[type="email"],
+input[type="tel"]
+{
+    color: $text-color;    
+    background: transparent;
+    border-style: none;
+    border-bottom: solid 2px $text-color;
+    padding: 1em;
+    outline: none;
+    margin-bottom: 2em;
+    font-size: $font-size;
+
+    &:focus{
+        border-bottom: solid 2px $accent-color;
+    }
+    
+}
+
+input[type="date"],
+select{
+    width: fit-content;
+    color: $text-color;    
+    background: transparent;
+    border-style: none;
+    border-bottom: solid 2px $text-color;
+    padding: 1em;
+    outline: none;
+    margin-bottom: 2em;
+    font-size: $font-size;
+
+    &:focus{
+        border-bottom: solid 2px $accent-color;
+    }
+    &::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+    }
+}
+
+.two-col{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 2em;
+    margin-block: 1em;
+
+    label{
+        width: fit-content;
+    }
+}
+
+button{
+    flex-grow: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
