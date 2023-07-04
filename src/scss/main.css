@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
 a {
   font-family: "Noto Sans", sans-serif;
   color: #F2FBFF;
@@ -26,6 +30,19 @@ nav a {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 48px;
+  font-family: "Noto Serif Display", serif;
+  line-height: 100%;
+  letter-spacing: -0.96px;
+}
+
+footer p {
+  font-weight: 200;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+}
+
 body {
   background: #0F1B23;
   color: #F2FBFF;
@@ -33,17 +50,268 @@ body {
 
 header {
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   padding-inline: 11.11%;
   display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-items: flex-end;
 }
 
 nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 3em;
+  padding-bottom: 1em;
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.menu {
+  padding-inline: 11.11%;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  max-width: calc(100vw - 22.22%);
+  margin: 0 auto;
+}
+
+.primary-btn {
+  padding: 16px 32px;
+  background: transparent;
+  border: solid 2px white;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  color: #F2FBFF;
+}
+.primary-btn:hover {
+  border-color: #D98F27;
+  color: #D98F27;
+}
+
+form, label, input, select, button {
+  display: block;
+  font-family: "Noto Sans", sans-serif;
+  width: 100%;
+}
+
+input[type=text]:-webkit-autofill {
+  color: #F2FBFF;
+  background: transparent;
+  border-style: none;
+  border-bottom: solid 2px #F2FBFF;
+  padding: 1em;
+  outline: none;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+
+input[type=text],
+input[type=text]:autofill,
+input[type=email],
+input[type=tel] {
+  color: #F2FBFF;
+  background: transparent;
+  border-style: none;
+  border-bottom: solid 2px #F2FBFF;
+  padding: 1em;
+  outline: none;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+input[type=text]:-webkit-autofill:focus {
+  border-bottom: solid 2px #D98F27;
+}
+input[type=text]:focus,
+input[type=text]:autofill:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+  border-bottom: solid 2px #D98F27;
+}
+
+input[type=date],
+select {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #F2FBFF;
+  background: transparent;
+  border-style: none;
+  border-bottom: solid 2px #F2FBFF;
+  padding: 1em;
+  outline: none;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+input[type=date]:focus,
+select:focus {
+  border-bottom: solid 2px #D98F27;
+}
+input[type=date]::-webkit-calendar-picker-indicator,
+select::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.two-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 2em;
+  margin-block: 1em;
+}
+.two-col label {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  flex-grow: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body.home-bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, black 100%), #0F1B23;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-inline: 11.11%;
+}
+.hero .hero-content {
+  background: #0F1B23;
+  padding: 80px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 700px;
+}
+.hero .hero-content h1 {
+  font-weight: 200;
+  letter-spacing: -2px;
+}
+.hero .hero-content h1 span {
+  font-weight: 500;
+}
+.hero .hero-content .cta {
+  display: flex;
+  gap: 2em;
+}
+.hero .hero-img {
+  width: 35%;
+  height: 100vh;
+  position: absolute;
+  left: 23%;
+  top: 0;
+  z-index: -1;
+  background: url(../images/background.jpeg);
+  background-size: cover;
+}
+
+.menu-bg {
+  background: url(../images/menu-bg-img.jpeg), lightgray 50%/cover no-repeat, #0F1B23;
+  background-blend-mode: multiply, normal;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+.menu-content h1 {
+  margin-top: 2em;
+}
+.menu-content h2 {
+  margin-bottom: 1em;
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+}
+.menu-content p {
+  line-height: 1.5;
+  font-weight: 300;
+}
+.menu-content p span {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.menu-content .menu-section {
+  width: 100%;
+  text-align: center;
+}
+
+.reservation-bg {
+  background: url(../images/menu-bg-img.jpeg), lightgray 50%/cover no-repeat, #0F1B23;
+  background-blend-mode: multiply, normal;
+}
+.reservation-bg .reservation {
+  padding-inline: 11.11%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6%;
+}
+.reservation-bg .reservation .reservation-img {
+  background: url(../images/reservation-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  height: 700px;
+  flex-grow: 0.5;
+}
+.reservation-bg .reservation .reservation-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  max-width: 700px;
+}
+.reservation-bg .reservation .reservation-content h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 48px;
+  letter-spacing: -1px;
+}
+.reservation-bg .reservation .reservation-content .reservation-message p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.reservation-bg .reservation .reservation-content .reservation-message ul {
+  margin: 0 auto;
+  padding: 1em 3em 2em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3em auto 0;
+  border-top: solid 2px #F2FBFF;
+}
+.reservation-bg .reservation .reservation-content .reservation-message ul li {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0.5em;
+}
+.reservation-bg .reservation .reservation-content span {
+  font-size: 12px;
+}
+.reservation-bg .reservation .reservation-content span a {
+  text-decoration: underline;
 }
 
 * {
