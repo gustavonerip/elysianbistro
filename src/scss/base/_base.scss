@@ -6,4 +6,8 @@
 body{
     background: $bg-color;
     color: $text-color;
+    height: fit-content;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
 }
