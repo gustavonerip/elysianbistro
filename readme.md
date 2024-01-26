@@ -1,2 +1,4 @@
 # Elysian Bistro
-Website for the Elysian Bistro website.
+Website for Elysian Bistro.
+
+Developed by [Gustavo Neri](http://gustavoneri.art)
