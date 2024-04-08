@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,75,200..900;1,75,200..900&display=swap');
+@import "./variables";
+
+body {
+    color: $brand_secondary;
+    background: $brand_primary;
+}
+
+h1 {
+    font-family: 'Noto Serif Display';
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 75;
+}
