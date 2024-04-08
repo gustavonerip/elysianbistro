@@ -12,6 +12,10 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "pages/about.html"));
 });
 
+app.get("/menu", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "pages/reservations.html"));
+});
+
 app.get("/reservations", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "pages/reservations.html"));
 });
