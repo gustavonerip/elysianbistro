@@ -43,6 +43,11 @@ body {
     background-blend-mode: multiply;
 }
 
+.max-100vh {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
 
 h1 {
     font-family: $secondary_font;
@@ -66,7 +71,7 @@ a {
 .container {
     width: calc(100% - (86px*2));
     min-height: calc(100vh - (86px*2));
-    border: solid 1px hsla(198, 100%, 97%, 0.5);
+    border: solid 2px hsla(198, 100%, 97%, 0.5);
     margin: 86px auto;
 }
 

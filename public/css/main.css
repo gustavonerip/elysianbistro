@@ -17,6 +17,8 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .home-container .logo {
   margin-top: calc(15% - 86px);
@@ -99,6 +101,11 @@ body {
   background-blend-mode: multiply;
 }
 
+.max-100vh {
+  max-height: 100vh;
+  overflow-y: hidden;
+}
+
 h1 {
   font-family: "Noto Serif Display", serif;
   font-weight: 200;
@@ -120,7 +127,7 @@ a {
 .container {
   width: calc(100% - 172px);
   min-height: calc(100vh - 172px);
-  border: solid 1px hsla(198, 100%, 97%, 0.5);
+  border: solid 2px hsla(198, 100%, 97%, 0.5);
   margin: 86px auto;
 }
 

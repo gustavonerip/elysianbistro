@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
+    max-height: 100vh;
+    overflow: hidden;
 
     .logo {
         margin-top: calc(15% - 86px);
