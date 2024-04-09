@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./animations";
 @import './home';
+@import './menu';
 
 *,
 *::before,
@@ -148,4 +149,19 @@ a {
     transform: translate(-50%, -50%);
     // transition: all 0.2s ease-in-out;
     pointer-events: none;
+}
+
+.star {
+    width: 12px;
+    height: 12px;
+    background: url('/images/star.svg');
+    background-position: center center;
+    background-size: contain;
+    display: inline-block;
+    margin-inline: 12px;
+    transform: translateY(-50%);
+}
+
+.row {
+    display: flex;
 }
