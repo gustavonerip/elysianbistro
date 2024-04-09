@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Display:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,75,200..900;1,75,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Display:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wdth,wght@0,75,200..900;1,75,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Display:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap");
 @keyframes bganimation-2 {
   0% {
     background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
@@ -157,6 +159,39 @@
   top: 0;
   right: 15%;
   z-index: -1;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 12vh;
+  gap: 32px;
+}
+.contact-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-container .content p {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.contact-container .content .contact-form {
+  width: 100%;
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contact-container .content .contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-container .content .contact-form .form-group textarea {
+  min-height: 114px;
 }
 
 *,
@@ -316,4 +351,19 @@ button.primary-btn:hover::after {
 
 .row {
   display: flex;
+}
+
+input,
+input[type=date],
+textarea {
+  padding: 16px;
+  border-bottom: solid 2px #F2FBFF;
+  background-color: transparent;
+  color: #F2FBFF;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+textarea {
+  resize: none;
 }

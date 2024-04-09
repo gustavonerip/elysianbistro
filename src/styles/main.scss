@@ -3,6 +3,7 @@
 @import './home';
 @import './menu';
 @import './reservations';
+@import './contact';
 
 *,
 *::before,
@@ -171,4 +172,19 @@ button.primary-btn {
 
 .row {
     display: flex;
+}
+
+input,
+input[type=date],
+textarea {
+    padding: 16px;
+    border-bottom: solid 2px $secondary_color;
+    background-color: transparent;
+    color: $secondary_color;
+    font-size: $font-size;
+    font-family: $primary_font;
+}
+
+textarea {
+    resize: none;
 }

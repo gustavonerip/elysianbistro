@@ -1,0 +1,39 @@
+@import './variables';
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 12vh;
+    gap: 32px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .contact-form {
+            width: 100%;
+            max-width: 630px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                textarea {
+                    min-height: 114px;
+                }
+            }
+        }
+    }
+}
