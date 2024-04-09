@@ -2,6 +2,7 @@
 @import "./animations";
 @import './home';
 @import './menu';
+@import './reservations';
 
 *,
 *::before,
@@ -104,12 +105,17 @@ a {
     margin: 5vh auto;
 }
 
-.primary-btn {
-    font-size: $font-size * 1.33;
+.primary-btn,
+button.primary-btn {
+    font-size: $font-size;
+    font-family: $primary_font;
+    background: transparent;
+    color: $secondary_color;
     text-decoration: none;
     position: relative;
     padding: 16px 32px;
     transition: $transition;
+    cursor: pointer;
 
     &::after {
         content: '';
@@ -149,6 +155,7 @@ a {
     transform: translate(-50%, -50%);
     // transition: all 0.2s ease-in-out;
     pointer-events: none;
+    position: fixed;
 }
 
 .star {

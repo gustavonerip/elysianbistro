@@ -6,10 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations | Elysian Bistro</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
-    <h1>Reservations</h1>
+    <header>
+        <div class="contact-info">
+            <span>Phone: +1 (555) 123-4567</span> |
+            <span>Email: info@elysianbistro.com</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/reservations">Reservations</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container reservations-container">
+        <div class="content">
+            <h1><span class="star"></span>Reservations<span class="star"></span></h1>
+            <p>
+                Indulge in exquisite cuisine, surrounded by an elegant ambiance.<br />
+                Book your table today and savour the extraordinary flavours that await you.
+            </p>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input name="fullname" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input name="phone" type="phone" />
+                </div>
+                <div class="form-group row">
+                    <div class="form-group row">
+                        <label for="date">Date</label>
+                        <input name="date" type="date" />
+                    </div>
+                    <div class="form-group row">
+                        <label for="time">Time</label>
+                        <select name="time">
+                            <option value="5:00 PM">5:00 PM</option>
+                            <option value="5:30 PM">5:30 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="6:30 PM">6:30 PM</option>
+                            <option value="7:00 PM">7:00 PM</option>
+                            <option value="7:30 PM">7:30 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="8:30 PM">8:30 PM</option>
+                            <option value="9:00 PM">9:00 PM</option>
+                            <option value="9:30 PM">9:30 PM</option>
+                        </select>
+                    </div>
+                    <div class="form-group row">
+                        <label for="guests">Guests</label>
+                        <input name="guests" type="number" min="1" max="6" />
+                    </div>
+                </div>
+                <button class="primary-btn" type="submit">Book table</button>
+            </form>
+            <p class="text-small">* For 7+ guests please call +1 (555) 123-4567 or email at info@elysianbistro.com and
+                we will be happy to assist you.</p>
+        </div>
+    </main>
+    <div class="reservations-img"></div>
 </body>
 
 </html>
