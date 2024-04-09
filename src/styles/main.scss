@@ -48,6 +48,34 @@ body {
     overflow-y: hidden;
 }
 
+header {
+    $padding-sides: 5%;
+    $padding-block: 3%;
+    width: calc(100% - ($padding-sides * 2));
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: $padding-sides;
+    padding: $padding-block $padding-sides;
+
+    nav {
+        ul {
+            display: flex;
+            gap: 32px;
+
+            a {
+                text-decoration: none;
+                padding: 16px;
+                transition: $transition;
+
+                &:hover {
+                    color: $accent_color;
+                }
+            }
+        }
+    }
+}
+
 
 h1 {
     font-family: $secondary_font;
@@ -69,10 +97,10 @@ a {
 }
 
 .container {
-    width: calc(100% - (86px*2));
-    min-height: calc(100vh - (86px*2));
+    width: calc(100% - (5% * 2));
+    min-height: calc(100vh - (5vh * 2));
     border: solid 2px hsla(198, 100%, 97%, 0.5);
-    margin: 86px auto;
+    margin: 5vh auto;
 }
 
 .primary-btn {
@@ -120,10 +148,4 @@ a {
     transform: translate(-50%, -50%);
     // transition: all 0.2s ease-in-out;
     pointer-events: none;
-}
-
-.spotlight-1 {
-    top: 0;
-    left: 0;
-    // animation: bganimation-1 20s infinite;
 }

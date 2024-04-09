@@ -8,7 +8,7 @@
     overflow: hidden;
 
     .logo {
-        margin-top: calc(15% - 86px);
+        margin-top: 10%;
 
         h1 {
             text-align: center;
@@ -29,10 +29,10 @@
     }
 
     .content {
-        width: calc(100% - (86px * 2));
-        max-width: 1291px;
+        width: 80%;
+        height: 100%;
         margin-top: auto;
-        margin-bottom: 128px;
+        margin-bottom: 10vh;
         display: flex;
         justify-content: space-between;
 
@@ -40,10 +40,11 @@
             font-size: $font-size * 1.33;
             flex-grow: 0;
             padding-right: 10%;
+            width: 40%;
         }
 
         .cta-wrapper {
-            width: minmax(630px, 2fr);
+            width: 60%;
             display: flex;
             gap: 64px;
             align-items: center;

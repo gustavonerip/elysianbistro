@@ -1,17 +1,16 @@
 // Create and append the .spotlights div dynamically
-var cursor = document.createElement("div");
+let cursor = document.createElement("div");
 cursor.classList.add("spotlights");
 document.body.appendChild(cursor);
-
-var delay = 0; // Adjust the delay time in milliseconds
+let delay = 0;
 
 document.addEventListener("mousemove", (e) => {
   // Clear any previous timeout
   clearTimeout(cursor.timeout);
 
   // Get mouse coordinates
-  var x = e.clientX;
-  var y = e.clientY;
+  let x = e.clientX;
+  let y = e.clientY;
 
   // Set a timeout to update cursor position after the delay
   cursor.timeout = setTimeout(() => {
