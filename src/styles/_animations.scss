@@ -1,0 +1,44 @@
+// // Background animation
+// @keyframes bganimation-1 {
+//     0% {
+//         transform: translate(80%, -60%);
+//     }
+
+//     25% {
+//         transform: translateY(-80%);
+//     }
+
+//     50% {
+//         transform: translate(-150%, -60%);
+//     }
+
+//     100% {
+//         transform: translate(80%, -60%);
+//     }
+// }
+
+@keyframes bganimation-2 {
+    0% {
+        background-position:
+            -100% -100%,
+            200% 200%,
+            -100% 200%,
+            200% -100%;
+    }
+
+    50% {
+        background-position:
+            150% 100%,
+            -200% 100%,
+            100% 0%,
+            0% 100%;
+    }
+
+    100% {
+        background-position:
+            -100% -100%,
+            200% 200%,
+            -100% 200%,
+            200% -100%;
+    }
+}

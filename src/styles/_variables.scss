@@ -2,13 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Serif+Display:ital,wdth,wght@0,75,100..900;1,75,100..900&display=swap');
 
 // Brand Colors
-$brand_primary: #0F1B23;
-$brand_secondary: #F2FBFF;
-$brand_accent: #D98F27;
+$primary_color: #0F1B23;
+$secondary_color: #F2FBFF;
+$accent_color: #D98F27;
 
 // Fonts
 $primary_font: 'Josefin Sans', sans-serif;
 $secondary_font: 'Noto Serif Display', serif;
+$font_size: 18px;
 
 // Transitions & Animations
 $transition: all 0.4s ease-in-out;

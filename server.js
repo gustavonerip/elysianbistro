@@ -13,7 +13,7 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/menu", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "pages/reservations.html"));
+  res.sendFile(path.join(__dirname, "public", "pages/menu.html"));
 });
 
 app.get("/reservations", (req, res) => {
