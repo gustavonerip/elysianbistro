@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./animations";
 @import './home';
+@import './about';
 @import './menu';
 @import './reservations';
 @import './contact';
@@ -59,7 +60,9 @@ header {
     justify-content: space-between;
     position: fixed;
     left: $padding-sides;
+    top: calc($padding-block * 2);
     padding: $padding-block $padding-sides;
+    z-index: 2;
 
     nav {
         ul {

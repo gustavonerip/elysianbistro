@@ -5,11 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Elysian Bistro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
-    <h1>About Us</h1>
+    <header>
+        <div class="contact-info">
+            <span>Phone: +1 (555) 123-4567</span> |
+            <span>Email: info@elysianbistro.com</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/reservations">Reservations</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container about-container">
+        <div class="about-content">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <h1><span class="star"></span>About Us<span class="star"></span></h1>
+                        <div class="slide-content">
+                            <div class="slide-text">
+                                <h2>At Elysian Bistro, we believe in more than just serving food;
+                                    we craft moments.</h2>
+                                <p>
+                                    Our culinary sanctuary is born out of a passion for creating exceptional dining
+                                    experiences that linger in your memory.
+                                    Immerse yourself in a world where exquisite flavours dance on your palate, where
+                                    each dish is a masterpiece,
+                                    meticulously curated to elevate your senses. Our commitment extends beyond the plate
+                                    – step into an ambiance of
+                                    sophistication, complemented by a warm and welcoming atmosphere. Meet our team of
+                                    culinary artisans, dedicated to
+                                    transforming every visit into a celebration of taste and hospitality. Whether it's
+                                    an intimate dinner, a joyous
+                                    celebration, or a casual gathering, Elysian Bistro invites you to savour the
+                                    extraordinary.
+                                    Join us, and let's create timeless moments together.
+                                </p>
+                            </div>
+                            <div class="slide-img">
+                                <img src="/images/about-food-2.png" />
+                                <img src="/images/about-food-3.png" />
+                                <img src="/images/about-food.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1><span class="star"></span>Our Team<span class="star"></span></h1>
+                        <div class="slide-content">
+                            <div class="slide-img">
+                                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=3417&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    style="transform: rotate(-5deg)" />
+                            </div>
+                            <div class="slide-text">
+                                <h2>Michael Jackson</h2>
+                                <h3>Executive Chef</h3>
+                                <p>
+                                    With a culinary journey that spans Michael's experience in renowned kitchens around
+                                    the
+                                    world, our Executive Chef brings
+                                    a creative flair and a commitment to excellence to every dish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1><span class="star"></span>Our Team<span class="star"></span></h1>
+                        <div class="slide-content">
+                            <div class="slide-img">
+                                <img src="https://plus.unsplash.com/premium_photo-1677327747062-f3f148abf79a?q=80&w=4160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    style="transform: rotate(5deg)" />
+                            </div>
+                            <div class="slide-text">
+                                <h2>Diana Ross</h2>
+                                <h3>Wine Director</h3>
+                                <p>
+                                    Elevate your dining experience with Diana's expert wine pairings. Their passion for
+                                    fine wines ensures each sip
+                                    complements our exquisite dishes seamlessly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1><span class="star"></span>Our Team<span class="star"></span></h1>
+                        <div class="slide-content">
+                            <div class="slide-img">
+                                <img src="https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?q=80&w=4000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    style="transform: rotate(-5deg)" />
+                            </div>
+                            <div class="slide-text">
+                                <h2>Mariah Carey</h2>
+                                <h3>Events Coordinator</h3>
+                                <p>
+                                    Elevate your dining experience with Diana's expert wine pairings. Their passion for
+                                    fine wines ensures each sip
+                                    complements our exquisite dishes seamlessly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/slider.js" type="module"></script>
 </body>
 
 </html>
