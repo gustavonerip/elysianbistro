@@ -1,2 +1,4 @@
-[build]
-functions = "functions"
+[[redirects]]
+  from = "/*"
+  to = "public/pages/index.html"
+  status = 200
