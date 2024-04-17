@@ -1,4 +1,5 @@
 @import './variables';
+@import './mixins';
 
 .about-container {
     position: relative;
@@ -79,6 +80,19 @@
         width: 630px;
         display: flex;
         flex-direction: column;
+        @include text-style-body;
+
+        h2 {
+            @include text-style-heading-3;
+        }
+
+        h3 {
+            @include text-style-heading-5;
+        }
+
+        p {
+            margin-top: 32px;
+        }
     }
 
     .slide-img {

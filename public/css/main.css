@@ -139,6 +139,34 @@
   width: 630px;
   display: flex;
   flex-direction: column;
+  font-size: 1.125rem;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+}
+.slide-content .slide-text h2 {
+  font-size: 2.332rem;
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+}
+.slide-content .slide-text h3 {
+  font-size: 1.62rem;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  text-decoration: none;
+  text-transform: none;
+}
+.slide-content .slide-text p {
+  margin-top: 32px;
 }
 .slide-content .slide-img {
   position: relative;
