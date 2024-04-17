@@ -1,0 +1,113 @@
+@import './variables';
+@import './mixins';
+
+.about-container {
+    position: relative;
+    z-index: 1;
+
+    .about-content {
+        position: relative;
+        height: 89vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 8px 16px;
+        color: $secondary_color;
+        opacity: 0.3;
+        transition: $transition;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .swiper-button-prev {
+        margin-left: 3%;
+    }
+
+    .swiper-button-next {
+        margin-right: 3%;
+    }
+}
+
+.swiper-pagination-bullet {
+    color: $secondary_color;
+    opacity: 0.1 !important;
+    transition: $transition;
+    padding: 2px;
+    background-color: $secondary_color !important;
+    transform: scale(0.75);
+}
+
+.swiper-pagination-bullet-active {
+    color: $secondary_color;
+    opacity: 1 !important;
+    transform: scale(1);
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    max-height: 700px;
+    padding: 0 10%;
+    justify-content: center;
+    gap: 154px;
+
+    .slide-text {
+        width: 630px;
+        display: flex;
+        flex-direction: column;
+        @include text-style-body;
+
+        h2 {
+            @include text-style-heading-3;
+        }
+
+        h3 {
+            @include text-style-heading-5;
+        }
+
+        p {
+            margin-top: 32px;
+        }
+    }
+
+    .slide-img {
+        position: relative;
+        width: 632px;
+        height: 706px;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 49px;
+        }
+    }
+}
