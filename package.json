@@ -6,13 +6,15 @@
   "scripts": {
     "sass-watch": "sass --no-source-map --watch src/styles/main.scss public/css/main.css",
     "nodemon-watch": "nodemon server.js -e *",
-    "start": "npm-run-all --parallel sass-watch nodemon-watch"
+    "start": "npm-run-all --parallel sass-watch nodemon-watch",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
   "author": "Gustavo Neri",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
     "gsap": "^3.12.5",
+    "netlify-lambda": "^2.0.16",
     "swiper": "^11.1.1"
   },
   "devDependencies": {
