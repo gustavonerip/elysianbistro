@@ -487,3 +487,46 @@ textarea {
 textarea {
   resize: none;
 }
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background: url(/images/background.jpg) #0F1B23 no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.75s ease;
+}
+.loader .spinner {
+  width: 32px;
+  height: 32px;
+  border: solid 2px #0F1B23;
+  border-top: solid 1px #F2FBFF;
+  border-radius: 50%;
+  animation: spinner 0.75s linear infinite;
+  background: url("/images/star.svg") no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  position: relative;
+  transition: all 0.75s ease;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
